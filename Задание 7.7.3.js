@@ -4,12 +4,12 @@
 // Затем создайте новый массив, содержащий только свойства name (имя) каждого пользователя.
 
 let users = [
-	{ name: 'Bob', age: 50 },
-	{ name: 'Julia', age: 10 },
-	{ name: 'Dean', age: 33 },
-	{ name: 'Sam', age: 30 },
-	{ name: 'Jack', age: 17 },
-	{ name: 'Derek', age: 18 },
+  { name: 'Bob', age: 50 },
+  { name: 'Julia', age: 10 },
+  { name: 'Dean', age: 33 },
+  { name: 'Sam', age: 30 },
+  { name: 'Jack', age: 17 },
+  { name: 'Derek', age: 18 },
 ]
 let adultUsers = users.filter(user => user.age >= 18)
 let namesUsers = adultUsers.map(user => user.name)

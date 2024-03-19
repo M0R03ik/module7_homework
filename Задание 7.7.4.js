@@ -6,12 +6,12 @@
 // что свойство fullName объекта person было изменено соответствующим образом.
 
 function setFullName(obj, fullName) {
-	obj.fullName = fullName
+  obj.fullName = fullName
 }
 
 const person = {
-	firstName: 'John',
-	lastName: 'Doe',
+  firstName: 'John',
+  lastName: 'Doe',
 }
 const setPersonFullName = setFullName.bind(null, person)
 

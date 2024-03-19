@@ -4,12 +4,12 @@
 // Используйте метод call, чтобы вызвать функцию printInfo от имени объекта person.
 
 function printInfo() {
-	console.log(`Name: ${this.name}, Age: ${this.age}`)
+  console.log(`Name: ${this.name}, Age: ${this.age}`)
 }
 
 const person = {
-	name: 'Darth',
-	age: '37',
+  name: 'Darth',
+  age: '37',
 }
 
 printInfo.call(person)

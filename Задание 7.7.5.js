@@ -3,15 +3,15 @@
 // содержащий только уникальные числа, отсортированные в порядке возрастания.
 
 function getSortArray(arr) {
-	let newArray = []
+  let newArray = []
 
-	for (let i = 0; i < arr.length; i++) {
-		if (!arr.includes(arr[i], i + 1)) {
-			newArray.push(arr[i])
-		}
-	}
+  for (let i = 0; i < arr.length; i++) {
+    if (!arr.includes(arr[i], i + 1)) {
+      newArray.push(arr[i])
+    }
+  }
 
-	return newArray.sort((a, b) => a - b)
+  return newArray.sort((a, b) => a - b)
 }
 
 let numbers = [5, 3, 6, 7, 3, 21, 567, 67, 756, 23, 567]

@@ -7,24 +7,24 @@
 // в качестве второго аргумента.
 
 function calculate(a, b, operator) {
-	switch (operator) {
-		case '+':
-			return a + b
-		case '-':
-			return a - b
-		case '*':
-			return a * b
-		case '/':
-			return a / b
-		default:
-			throw new Error('Unknown operator: ' + operator)
-	}
+  switch (operator) {
+    case '+':
+      return a + b
+    case '-':
+      return a - b
+    case '*':
+      return a * b
+    case '/':
+      return a / b
+    default:
+      throw new Error('Unknown operator: ' + operator)
+  }
 }
 
 const obj = {
-	a: 5,
-	b: 3,
-	operator: '*',
+  a: 5,
+  b: 3,
+  operator: '*',
 }
 
 console.log(calculate.apply(obj, [2, 3, '+']))
